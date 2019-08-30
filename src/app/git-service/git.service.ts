@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HttpClientModule, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -8,5 +9,5 @@ export class GitService {
     return 
   }
 
-  constructor() { }
+  constructor(private http:HttpClientModule) { }
 }
