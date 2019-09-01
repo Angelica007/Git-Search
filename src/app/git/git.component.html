@@ -1,10 +1,11 @@
-<div style="text-align: center; margin: 250px;">
-        User name: <input type="text" [(ngModel)]="username">
+<div style="text-align: center; margin: 150px;">
+        <label for="username">Username</label>
+        <input type="text" [(ngModel)]="username" placeholder="Enter your GitHub username">
         <button (click)="search()" class="btn-warning">Search</button>
         <br><br>
         
         <br>
-        <div *ngIf="response">
+        <div *ngIf="response" class="well" style="text-align: left">
             <div class="row">
                <div class="col-sm-3">
                 <img src="{{response.avatar_url}}" width="300px" height="300px">
@@ -18,5 +19,12 @@
         <p>Url: {{response.url}}</p>
         </div>
 </div>
+
+
+<footer>
+        <h6 style="text-align: center">Copyright 2019 © All rights reserved</h6>
+    
+</footer>
+      
 
 
