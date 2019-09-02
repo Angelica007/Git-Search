@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './git.component.html',
   styleUrls: ['./git.component.css']
 })
+
 export class GitComponent implements OnInit {
 
   username: string = "";

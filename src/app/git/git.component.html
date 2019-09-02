@@ -5,18 +5,19 @@
         <br><br>
         
         <br>
-        <div *ngIf="response" class="well" style="text-align: left">
+        <div *ngIf="response" style="text-align: left">
             <div class="row">
                <div class="col-sm-3">
                 <img src="{{response.avatar_url}}" width="300px" height="300px">
                  </div>
             </div>
-        <p>Email: {{response.email}}</p>
-        <p>Location: {{response.location}}</p> 
-        <p>Events: {{response.events_url}}</p>
-        <p>Number of Followers: {{response.followers}}</p>
-        <p>Number of Repositories: {{response.repos_url}}</p>
-        <p>Url: {{response.url}}</p>
+        <p> <a href="{response.email}}" target="_blank"></a> Email: {{response.email}}</p>
+        <p><a href="{response.location}}" target="_blank"></a> Location: {{response.location}}</p> 
+        <p><a href="{response.events_url}}" target="_blank"></a> Events: {{response.events_url}}</p>
+        <p><a href="{response.followers}}" target="_blank"></a> Number of Followers: {{response.followers}}</p>
+        <p><a href="{response.repos_url}}" target="_blank"></a> Number of Repositories: {{response.repos_url}}</p>
+        <p><a href="{response.email}}" target="_blank"></a> Url: {{response.url}}</p>
+        <p><a href="{response.html_url}}" target="_blank"></a> View profile: {{response.html_url}}</p>
         </div>
 </div>
 
